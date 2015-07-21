@@ -50,7 +50,7 @@ for i in titles:
     l.append(i.text)
 
 
-fname = "%s/list_of_jobs.json" % os.getcwd()
+fname = "%s/list_of_jobs.json" % information.path_to_the_file
 
 with open(fname, "wb") as f:
     json.dump(l, f)

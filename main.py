@@ -61,8 +61,7 @@ for i in titles:
     l.append(i.text)
 
 
-fname = "%s/list_of_jobs.json" % os.getcwd()
-
+fname = "%s/list_of_jobs.json" % information.path_to_the_file
 
 with open(fname, 'rb') as f:
     s = json.load(f)
@@ -73,12 +72,12 @@ with open(fname, 'rb') as f:
     else:
         result = re.sub("<.*?>", "", l[0])
         mixer.init()
-        mixer.music.load("/home/asd/Python/odesk_check/sound.mp3")
+        mixer.music.load("%s/sound.mp3") information.path_to_the_file
         mixer.music.play()
         time.sleep(0.4)
         notifier = pynotify.Notification(result,
         "<i>keyword = " + information.search_word + "</i>" + "\n<a href=" + "'" + job_href + "'" + ">Open in browser</a>",
-        "/path/to/Upwrork-job-checker/logo.png")
+        "%s/logo.png") %information.path_to_the_file
         notifier.show()
 
         sms_message = result + " kwd = " + information.search_word
