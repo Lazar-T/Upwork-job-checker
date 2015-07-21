@@ -72,12 +72,14 @@ with open(fname, 'rb') as f:
     else:
         result = re.sub("<.*?>", "", l[0])
         mixer.init()
-        mixer.music.load("%s/sound.mp3") information.path_to_the_file
+        sound_path = "%s/sound.mp3" % information.path_to_the_file
+        logo_path = "%s/logo.png" % information.path_to_the_file
+        mixer.music.load(sound_path)
         mixer.music.play()
         time.sleep(0.4)
         notifier = pynotify.Notification(result,
         "<i>keyword = " + information.search_word + "</i>" + "\n<a href=" + "'" + job_href + "'" + ">Open in browser</a>",
-        "%s/logo.png") %information.path_to_the_file
+        logo_path)
         notifier.show()
 
         sms_message = result + " kwd = " + information.search_word
