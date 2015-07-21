@@ -12,7 +12,7 @@ Upwork-job-checker is automation software that goes on freelance site [upwork.co
 
 ###Usage
 
-For proper use you will need to enter valid username, password, search word(python, ruby...), and path to the exact location where Upwork-job-checker folder is.
+For proper use you will need to enter following in information.py file: valid username, password, search word(python, ruby...), and path to the exact location where Upwork-job-checker folder is.
 
 This is intended to  be integrated with cron job so you will need to open terminal emulator and type:
 ```
