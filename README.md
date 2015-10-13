@@ -27,7 +27,7 @@ Once inside scheduler type:
 @reboot sleep 30 && python /path/to/the/Upwork-job-checker/update_json.py > /path/to/the/Upwork-job-checker/file.log 2>&1
 ```
 
-The first command will be executed every 5 minutes to see if there's new job postings. Second command is intended for updating json file where job listings are located, and store information on log file.
+The first command will be executed every 5 minutes to see if there's new job postings. Second command is intended for updating json file where job listings are located, and storing output on log file.
 
 To stop running simply type:
 ```
