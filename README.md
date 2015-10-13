@@ -33,7 +33,7 @@ To stop running simply type:
 ```
 crontab -e
 ```
-And put comment sign(#) in front of previously mentioned commands.
+And put comment sign(#) in front of previously mentioned commands, or remove them completly.
 
 ### Requirements
 
