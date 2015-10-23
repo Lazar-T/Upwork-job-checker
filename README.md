@@ -41,9 +41,13 @@ Upwork-job-checker is using [pynotify](http://home.gna.org/py-notify/) to displa
 
 
 ### Installation and Running
+
+######Installing
 ```
 git clone https://github.com/Lazar-T/Upwork-job-checker
 
 ```
+
+######Running
 Proper running is explained in Usage part.
 
