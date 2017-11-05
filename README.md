@@ -2,15 +2,15 @@
 Get notified when new job posting is available at [upwork.com](https://www.upwork.com/)
 
 
-###Screenshot
+### Screenshot
 
 ![Screenshot](http://i.imgur.com/GoE8gp4.jpg)
 
-###About
+### About
 
 Upwork-job-checker is automation software that goes on freelance site [upwork.com](https://www.upwork.com/) and fetches latest jobs defined by keyword specified, so you don't have to manually check every five minutes if there's new offerings on the site. Option to send [sms message](https://www.twilio.com/) to your phone when there's update and option to open job url in a browser(as shown in screenshot).
 
-###Usage
+### Usage
 
 For proper use you will need to enter following in information.py file: valid username, password, search word(python, ruby...), and path to the exact location where Upwork-job-checker folder is.
 
@@ -42,12 +42,12 @@ Upwork-job-checker is using [pynotify](http://home.gna.org/py-notify/) to displa
 
 ### Installation and Running
 
-######Installing
+###### Installing
 ```
 git clone https://github.com/Lazar-T/Upwork-job-checker
 
 ```
 
-######Running
+###### Running
 Proper running is explained in Usage part.
 
